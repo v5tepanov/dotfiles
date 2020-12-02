@@ -1,0 +1,279 @@
+.titlebar {
+    background-color: var(--text-accent);
+}
+
+body {
+  font-family: "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-monospace: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  -webkit-font-smoothing: auto;
+  line-height: 1.3em;
+}
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer .CodeMirror {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.view-header-icon {
+  display: none;
+}
+
+.view-header-title {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* 4.8. Code */
+.markdown-preview-view code,
+.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian pre.HyperMD-codeblock {
+  color: var(--code);
+  font-family: var(--font-monospace);
+}
+
+/* 4.5. Popovers */
+.popover.hover-popover .markdown-embed-link {
+  border-bottom: none;
+}
+
+/* 4.1. Headings */
+.markdown-preview-view h1 {
+  font-size: 26px;
+  margin-top: 32px;
+  margin-bottom: 4px;
+}
+
+.markdown-preview-view h2 {
+  font-size: 22px;
+  margin-top: 23px;
+  margin-bottom: 4px;
+}
+
+.markdown-preview-view h3 {
+  font-size: 20px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.markdown-preview-view h4 {
+font-size: 18px;
+  margin-top: 14px;
+  margin-bottom: 4px;
+}
+
+.markdown-preview-view h5 {
+ font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.markdown-preview-view h6 {
+  font-size: 16px;
+  margin-top: 14px;
+  margin-bottom: 2px;
+}
+
+.cm-s-obsidian .cm-header-1 {
+  font-size: 26px;
+}
+
+.cm-s-obsidian .cm-header-2 {
+  font-size: 22px;
+}
+
+.cm-s-obsidian .cm-header-3,
+.cm-s-obsidian .cm-header-4,
+.cm-s-obsidian .cm-header-5,
+.cm-s-obsidian .cm-header-6 {
+  font-size: 20px;
+}
+
+.cm-s-obsidian .cm-header-6 {
+  color: var(--text-muted);
+}
+
+/* 4.1.1. Fix font weights */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+.cm-s-obsidian .cm-header {
+  font-weight: 600;
+}
+
+/* table headers and first column styling */
+
+/* первая строка обычно жирным */
+.markdown-preview-view th {
+  font-weight: 600;
+}
+
+.markdown-preview-view hr {
+  height: 1px;
+  opacity: 0.5;
+}
+
+.tag {
+  background-color: lightgrey;
+  border: none;
+  color: #666;
+  font-size: 14px;
+  padding: 1px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 0px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.tag:hover {
+color: white;
+background-color: var(--text-accent-hover);
+}
+.tag[href^="#obsidian"] {
+  background-color: #4d3ca6;
+}
+.tag[href^="#important"] {
+  background-color: red;
+}
+
+.cm-hmd-list-indent .cm-tab,
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  position: relative;
+}
+
+.cm-hmd-list-indent .cm-tab::before,
+ul ul::before,
+ol ul::before,
+ul ol::before,
+ol ol::before {
+  content:'';
+  /* border-left: 1px solid var(--background-modifier-border); */
+  position: absolute;
+}
+
+.cm-hmd-list-indent .cm-tab::before { left: 0; top: -5px; bottom: -4px; }
+
+ul ul::before,
+ol ul::before,
+ul ol::before,
+ol ol::before {
+  left: -16px;
+  top: 0;
+  bottom: 0;
+} 
+
+/* scrollbar */
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-bg);
+}
+::-webkit-scrollbar {
+  background-color: var(--scrollbar-bg);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--scrollbar-active-thumb-bg);
+}
+::-webkit-scrollbar {
+  width: 16px;
+  height: 12px;
+  -webkit-border-radius: 0px;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:active {
+  -webkit-border-radius: 0px;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* tooltip */
+
+.tooltip {
+  display: none;
+/*
+  animation: 40000ms forwards ease-in-out;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 6px;
+  color: #dcddde;
+  font-size: 14px;
+  left: 50%;
+  line-height: 20px;
+  max-width: 400px;
+  padding: 5px 14px;
+  position: fixed;
+  text-align: center;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: var(--layer-tooltip);
+  pointer-events: none; */
+}
+
+.CodeMirror-linenumber {
+  font-size: 13px;
+}
+
+/* line breaks */
+
+.cm-trailing-space-new-line, .cm-trailing-space-a, .cm-trailing-space-b, .cm-tab{
+  font-size: 0;
+}
+.cm-trailing-space-a::before, .cm-trailing-space-b::before, .cm-trailing-space-new-line::before, .cm-tab::before{
+  content:'·';
+  color:var(--text-faint);
+  font-size: initial;
+}
+.cm-trailing-space-new-line::before {
+  content:'↵';  
+}
+.cm-tab::before {
+  content:'⟶'
+}
+
+/* files list */
+
+.nav-file-title, .nav-folder-title {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 1px 1px 0 10px;
+}
+
+.nav-folder-title-content {
+    padding: 2px 12px;
+}
+
+.workspace-tab-header.is-active {
+    padding: 0px 10px 0px 10px;
+}
+
+/* shift list bullets to the left */
+
+ul {
+    padding-inline-start: 1.25em;
+}
+ol {
+    padding-inline-start: 1em;
+}
+
+/* remove space above first H1 */
+
+.markdown-preview-view {
+  padding: 0px 30px 50px 30px;
+}
+
+/* source code display with less line-height */
+
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"] {
+    line-height: 1.1;
+    text-shadow: none;
+}

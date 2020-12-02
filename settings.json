@@ -1,0 +1,55 @@
+   {
+    "editor.fontFamily": "Droid Sans Mono",
+    "editor.fontSize": 12,
+    "editor.fontLigatures": true,
+    "editor.wordWrapColumn": 999,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorWidth": 3,
+    "editor.minimap.enabled": true,
+    "editor.cursorSurroundingLines": 0,
+    "editor.formatOnSave": false,
+    "editor.rulers": [79,90,120],
+
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.shellArgs.windows": [ "/K SET PROMPT=$G$S$" ],
+    "terminal.integrated.fontFamily": "Droid Sans Mono",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontWeight": "200",
+    "terminal.integrated.lineHeight": 1.1,
+    "terminal.integrated.scrollback": 9999,
+
+    "python.pythonPath": "C:\\Python38\\python.exe",
+
+    "debug.console.fontSize": 12,
+    "debug.console.fontFamily": "Droid Sans Mono",
+
+    "files.trimTrailingWhitespace": true,
+
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+
+    "workbench.iconTheme": "eq-material-theme-icons-darker",
+    "workbench.settings.editor": "json",
+    "workbench.settings.openDefaultSettings": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorCustomizations": {
+      "editorRuler.foreground": "#333333",
+      "editorIndentGuide.background": "#333333",
+      "editorIndentGuide.activeBackground": "#444444",
+      "terminal.background": "#37373D",
+      "terminalCursor.foreground": "#00ff00"
+    },
+
+    "breadcrumbs.enabled": false,
+
+    "git.autofetch": true,
+    "git.ignoreWindowsGit27Warning": true,
+
+    "remote.SSH.remotePlatform": {
+      "lab9": "linux"
+    },
+
+    "markdown-preview-enhanced.previewTheme": "github-light.css",
+    "diffEditor.ignoreTrimWhitespace": false
+}
